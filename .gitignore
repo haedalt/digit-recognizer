@@ -1,0 +1,3 @@
+__pycache__/
+# Pickled sklearn models are version-specific; retrain locally (web_version ships model.bin instead)
+*.joblib

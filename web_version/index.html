@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Handwritten Digit Recognizer</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main>
+    <h1>Handwritten Digit Recognizer</h1>
+    <div class="layout">
+      <section class="panel">
+        <p class="label">Draw a digit (0-9)</p>
+        <canvas id="canvas" width="280" height="280"></canvas>
+        <div class="buttons">
+          <button id="predict">Predict</button>
+          <button id="clear">Clear</button>
+        </div>
+      </section>
+      <section class="panel">
+        <p class="label">Prediction</p>
+        <div id="result">?</div>
+        <div id="confidence">Loading model...</div>
+        <div id="bars"></div>
+      </section>
+    </div>
+  </main>
+  <script src="model.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
